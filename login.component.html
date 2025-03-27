@@ -1,0 +1,38 @@
+   <div class="background">
+    <div class="login-card">
+      <h1 class="head">KLAND</h1>
+      <h3 class="title">Enter your email to continue</h3>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" placeholder="Email" type="email" />
+          <mat-icon matSuffix>email</mat-icon>
+          <!-- <mat-error *ngIf="loginForm.get('email')?.invalid">
+            {{ getEmailErrorMessage() }}
+          </mat-error> -->
+        </mat-form-field>
+  
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" placeholder="Password" type="password" />
+          <button mat-icon-button matSuffix>
+            <mat-icon>visibility</mat-icon>
+          </button>
+          <!-- <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+            Password is required
+          </mat-error> -->
+        </mat-form-field>
+  
+        <div class="actions">
+          <a class="forgot-password" href="#">Forgot password?</a>
+        </div>
+        <button mat-raised-button color="primary" type="submit"  class="full-width">
+          Login
+        </button>
+      </form>
+      <p class="create-account">
+        Don’t have an account? <a href="#">Create Account</a>
+      </p>
+    </div>
+  </div>
+  

@@ -1,0 +1,349 @@
+/* ------------------------------------------------------Header Container--------------------------------------------------------- */
+
+.header {
+    text-align: center;
+    background-color: #00897b;
+    color: white;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #28a199;
+    color: white;
+    padding: 20px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1rem; 
+    font-weight: 900; 
+    color: #f8fcfb;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    transform: rotate(-3deg); 
+    display: inline-block;
+    letter-spacing: 2px; 
+}
+
+.instagram-icon {
+    color: #E4405F; /* Instagram's official pink color */
+    font-size: 2rem; /* Adjust the size as needed */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.user-icon {
+    font-size: 3rem; /* Adjust size */
+    color: #333; /* Set icon color */
+    margin-right: 10px; /* Add spacing between icon and text */
+  }
+  
+
+.header-title {
+    text-align: center;
+    color: white;
+}
+
+.header-title h1 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.header-title p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Menu Section */
+.menu-section {
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher {
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*-----------------------------Profile-------------------------------------------*/
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 1200px;
+}
+
+.profile-avatar {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #28a199;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile-phone,
+.profile-email {
+    font-size: 16px;
+    margin: 2px 0;
+    color: #555;
+}
+
+.personal-info {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px; 
+    background-color: white;
+    padding: 20px 30px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/*---------------------------------------------------- Sidebar Section------------------------------------------------- */
+.sidebar {
+    width: 20%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar li.active {
+    background-color: #28a199;
+    color: white;
+}
+
+.sidebar li.logout {
+    color: #d9534f;
+}
+
+.main-content {
+    width: 80%;
+}
+
+/*----------------------------------------------------Form----------------------------------------------*/
+
+.form-container {
+    width: 100%; 
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.save-btn {
+    background-color: #28a199;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.full-width {
+    flex: 1;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.phone-group {
+    display: flex;
+    gap: 10px;
+}
+
+.country-code {
+    width: 60px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-right: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/*------------------------------------------FOOTER----------------------------------------------------------------*/
+
+.footer {
+    background-color: #00897b;
+    /* Teal */
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.quick-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.quick-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.quick-links li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.privacy-policy {
+    flex: 1;
+    text-align: left;
+    font-size: 12px;
+}
+
+.follow-us {
+    text-align: center;
+    flex: 1;
+}
+
+.follow-us p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.presented-by {
+    text-align: right;
+    flex: 1;
+}
+
+.presented-by img {
+    height: 25px;
+}
